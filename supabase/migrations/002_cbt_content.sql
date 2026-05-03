@@ -1,0 +1,12 @@
+-- 002_cbt_content.sql
+-- DEPRECATED — content moved to the app binary in migration 004_decouple_content.sql.
+--
+-- This file previously seeded cbt_modules + cbt_lessons rows. Those tables no
+-- longer exist; lesson and question content now lives in
+-- Wagerwall/Wagerwall/Content/*.swift. See CONTENT_ARCHITECTURE.md.
+--
+-- Kept as a no-op so the migration history stays linear and reproducible
+-- against fresh databases (CREATE TABLE in 001 → no-op in 002 → DROP TABLE
+-- in 004 still works).
+
+-- intentionally empty

@@ -1,0 +1,56 @@
+{
+  "title": "Problem Gambling Severity Index",
+  "description": "The following questions help us understand your relationship with gambling and personalize your recovery plan.",
+  "questions": [
+    {
+      "id": 1,
+      "text": "Have you bet more than you could really afford to lose?"
+    },
+    {
+      "id": 2,
+      "text": "Have you needed to gamble with larger amounts of money to get the same feeling of excitement?"
+    },
+    {
+      "id": 3,
+      "text": "When you gambled, did you go back another day to try to win back the money you lost?"
+    },
+    {
+      "id": 4,
+      "text": "Have you borrowed money or sold anything to get money to gamble?"
+    },
+    {
+      "id": 5,
+      "text": "Have you felt that you might have a problem with gambling?"
+    },
+    {
+      "id": 6,
+      "text": "Has gambling caused you any health problems, including stress or anxiety?"
+    },
+    {
+      "id": 7,
+      "text": "Have people criticized your betting or told you that you had a gambling problem, regardless of whether or not you thought it was true?"
+    },
+    {
+      "id": 8,
+      "text": "Has your gambling caused any financial problems for you or your household?"
+    },
+    {
+      "id": 9,
+      "text": "Have you felt guilty about the way you gamble or what happens when you gamble?"
+    }
+  ],
+  "options": [
+    { "label": "Never", "score": 0 },
+    { "label": "Sometimes", "score": 1 },
+    { "label": "Most of the time", "score": 2 },
+    { "label": "Almost always", "score": 3 }
+  ],
+  "scoring": {
+    "ranges": [
+      { "min": 0, "max": 0, "severity": "low", "label": "Non-problem gambling" },
+      { "min": 1, "max": 2, "severity": "low", "label": "Low risk" },
+      { "min": 3, "max": 7, "severity": "moderate", "label": "Moderate risk" },
+      { "min": 8, "max": 27, "severity": "severe", "label": "Problem gambling" }
+    ]
+  }
+}
