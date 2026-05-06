@@ -40,7 +40,7 @@ struct MainTabView: View {
                     .tag(2)
 
                 tabPage { ProfileView() }
-                    .tabItem { Label("More", systemImage: "ellipsis") }
+                    .tabItem { Label("Profile", systemImage: "person.crop.circle.fill") }
                     .tag(3)
             }
             .tint(Theme.tabActive)
